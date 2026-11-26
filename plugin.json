@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-thread-renamer",
+  "version": "0.1.0",
+  "description": "Give the current conversation a searchable title based on its latest goal.",
+  "author": {
+    "name": "nerdworldDE",
+    "url": "https://github.com/nerdworldDE"
+  },
+  "homepage": "https://github.com/nerdworldDE/codex-autorenamer",
+  "repository": "https://github.com/nerdworldDE/codex-autorenamer",
+  "license": "MIT",
+  "keywords": ["chat history", "codex", "productivity", "thread titles"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Thread Renamer",
+        "shortDescription": "Make conversations findable",
+        "longDescription": "Ask for a short, searchable title that reflects the main goal of your current conversation. Thread Renamer applies it when your client provides a conversation-title tool and suggests a title in other clients. This skill runs on request.",
+        "developerName": "nerdworldDE",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/nerdworldDE/codex-autorenamer",
+        "supportURL": "https://github.com/nerdworldDE/codex-autorenamer/issues",
+        "defaultPrompt": ["Give this conversation a short title I can search for later."],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "hooks": "./codex-hooks/hooks.json"
+    }
+  }
+}

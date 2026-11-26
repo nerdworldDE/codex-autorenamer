@@ -1,0 +1,12 @@
+{
+  "name": "local-thread-renamer",
+  "owner": {
+    "name": "Local"
+  },
+  "plugins": [
+    {
+      "name": "codex-thread-renamer",
+      "source": "./"
+    }
+  ]
+}
